@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  goodwe:
+    image: ghcr.io/xhyrom/goodwe-influxdb:latest
+    restart: always
+    environment:
+      INFLUXDB_TOKEN: ${INFLUXDB_TOKEN}
+      INFLUXDB_URL: "http://localhost:8086"
+      INFLUXDB_ORG: ${INFLUXDB_ORG}
+      INFLUXDB_BUCKET: ${INFLUXDB_BUCKET}
+      GOODWE_IP: "127.0.0.1"

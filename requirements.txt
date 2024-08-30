@@ -1,0 +1,9 @@
+certifi==2024.8.30
+goodwe==0.4.8
+influxdb-client==1.45.0
+python-dateutil==2.9.0.post0
+reactivex==4.0.4
+setuptools==74.0.0
+six==1.16.0
+typing_extensions==4.12.2
+urllib3==2.2.2
