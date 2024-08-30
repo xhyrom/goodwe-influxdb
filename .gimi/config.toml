@@ -1,0 +1,6 @@
+[providers]
+[providers.sourcehut]
+ssh = "git@git.sr.ht:~hyro/goodwe-influxdb"
+primary = true
+[providers.github]
+ssh = "git@github.com:xhyrom/goodwe-influxdb.git"
