@@ -6,6 +6,7 @@ FIELDS: set[str] = {
     "ipv1",
     "vpv2",
     "ipv2",
+    "ppv",
     "vbattery1",
     "battery_mode",
     "vgrid",
