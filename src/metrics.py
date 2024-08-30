@@ -8,6 +8,7 @@ FIELDS: set[str] = {
     "ipv2",
     "ppv",
     "vbattery1",
+    "pbattery1",
     "battery_mode",
     "vgrid",
     "igrid",
@@ -37,6 +38,7 @@ FIELDS: set[str] = {
     "e_total_imp",
     "meter_e_total_exp",
     "meter_e_total_imp",
+    "active_power_total",
 }
 
 
