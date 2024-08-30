@@ -3,12 +3,13 @@ name: Push image to ghcr.io
 on:
   push:
 
+permissions:
+  packages: write
+
 jobs:
   push:
     name: "Build Docker"
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
     steps:
       - uses: actions/checkout@v4
       - uses: docker/setup-qemu-action@v3

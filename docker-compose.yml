@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       INFLUXDB_TOKEN: ${INFLUXDB_TOKEN}
-      INFLUXDB_URL: "http://localhost:8086"
+      INFLUXDB_URL: ${INFLUXDB_URL}
       INFLUXDB_ORG: ${INFLUXDB_ORG}
       INFLUXDB_BUCKET: ${INFLUXDB_BUCKET}
-      GOODWE_IP: "127.0.0.1"
+      GOODWE_IP: ${GOODWE_IP}
