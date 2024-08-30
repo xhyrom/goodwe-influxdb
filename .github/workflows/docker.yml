@@ -3,8 +3,7 @@ name: Push image to ghcr.io
 on:
   push:
 
-permissions:
-  packages: write
+permissions: write-all
 
 jobs:
   push:
