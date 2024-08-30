@@ -27,6 +27,9 @@ FIELDS: set[str] = {
     "e_day_exp",
     "e_day_impl",
     "e_load_day",
+    "e_total",
+    "e_total_exp",
+    "e_total_imp",
     "meter_e_total_exp",
     "meter_e_total_imp",
 }
