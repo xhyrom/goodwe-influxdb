@@ -27,4 +27,5 @@ async def main():
     await main()
 
 
+print("Starting")
 asyncio.run(main())
