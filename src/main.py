@@ -24,6 +24,7 @@ async def main():
     store_metrics(write_api, metrics, time)
 
     sleep(60)
+    await main()
 
 
 asyncio.run(main())
