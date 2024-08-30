@@ -37,7 +37,6 @@ FIELDS: set[str] = {
     "e_total_imp",
     "meter_e_total_exp",
     "meter_e_total_imp",
-    "reactive_power_total",
 }
 
 
