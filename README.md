@@ -3,7 +3,7 @@
 ### Requirements
 
 goodwe inverter [(ET, EH, BT, BH, ES, EM, BP, DT, MS, D-NS, and XS families should works)](https://github.com/marcelblijleven/goodwe) \
-[influxdb](https://www.influxdata.com/)
+[influxdb](https://www.influxdata.com/) \
 [python3](https://www.python.org/)
 
 ### Installation
