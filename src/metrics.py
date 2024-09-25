@@ -28,6 +28,7 @@ FIELDS: set[str] = {
     "temperature",
     "temperature_module",
     "temperature_air",
+    "h_total",
     "e_day",
     "e_day_exp",
     "e_day_impl",
