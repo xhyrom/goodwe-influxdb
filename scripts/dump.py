@@ -3,7 +3,7 @@ import goodwe
 
 
 async def dump():
-    ip_address = "192.168.1.10"
+    ip_address = "192.168.0.100"
 
     inverter = await goodwe.connect(ip_address)
     runtime_data = await inverter.read_runtime_data()
