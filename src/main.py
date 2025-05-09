@@ -1,7 +1,6 @@
 import asyncio
 import datetime
 import os
-from time import sleep
 
 import influxdb_client
 from influxdb_client.client.write_api import SYNCHRONOUS
@@ -18,19 +17,20 @@ write_api = write_client.write_api(write_options=SYNCHRONOUS)
 
 
 async def main():
-    time = datetime.datetime.now(datetime.UTC)
+    print("Starting")
 
-    try:
-        metrics = await get_metrics()
-        print(metrics)
+    while True:
+        time = datetime.datetime.now(datetime.UTC)
 
-        store_metrics(write_api, metrics, time)
-    except Exception as e:
-        print(f"Failed to get metrics: {e}")
+        try:
+            metrics = await get_metrics()
+            print(metrics)
 
-    sleep(60)
-    await main()
+            store_metrics(write_api, metrics, time)
+        except Exception as e:
+            print(f"Failed to get metrics: {e}")
+
+        await asyncio.sleep(60)
 
 
-print("Starting")
 asyncio.run(main())
