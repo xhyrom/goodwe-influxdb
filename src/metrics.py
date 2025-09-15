@@ -10,6 +10,8 @@ FIELDS: set[str] = {
     "vbattery1",
     "pbattery1",
     "battery_mode",
+    "battery_temperature",
+    "battery_soc",
     "vgrid",
     "igrid",
     "fgrid",
