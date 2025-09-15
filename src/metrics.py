@@ -39,7 +39,10 @@ FIELDS: set[str] = {
     "e_total",
     "e_total_exp",
     "e_total_imp",
+    "e_bat_charge_total",
+    "e_bat_charge_day",
     "e_bat_discharge_total",
+    "e_bat_discharge_day",
     "meter_e_total_exp",
     "meter_e_total_imp",
     "active_power_total",
@@ -53,7 +56,6 @@ async def get_metrics() -> dict[str, str]:
     data: dict[str, str] = {}
 
     for sensor in inverter.sensors():
-        print(sensor)
         if sensor.id_ in runtime_data and sensor.id_ in FIELDS:
             data[sensor.id_] = runtime_data[sensor.id_]
 
