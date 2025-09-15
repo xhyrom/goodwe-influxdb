@@ -53,6 +53,7 @@ async def get_metrics() -> dict[str, str]:
     data: dict[str, str] = {}
 
     for sensor in inverter.sensors():
+        print(sensor)
         if sensor.id_ in runtime_data and sensor.id_ in FIELDS:
             data[sensor.id_] = runtime_data[sensor.id_]
 
