@@ -26,7 +26,7 @@ async def main():
             metrics = await get_metrics()
             print(metrics)
 
-            #store_metrics(write_api, metrics, time)
+            store_metrics(write_api, metrics, time)
         except Exception as e:
             print(f"Failed to get metrics: {e}")
 
